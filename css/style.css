@@ -14,6 +14,7 @@ body {
  width:880px;
  margin: 0 auto;
  padding: 0 10px;
+ background-color: rgba(255, 0, 0, 0.2);
  }
  .logo {
   float: left;
@@ -21,12 +22,14 @@ body {
   height: 56px;
   margin-top: 28px;
   margin-bottom: 77px;
+  /*margin-right: 160px;*/
  }
  .main-navigation {
-  width: 460px;
+  width: 450px;
   float: left;
-  margin-top: 33px;
-  margin-left: 80px;
+  margin-top: 40px;
+  margin-right: 60px;
+  background-color: yellow;
 
  }
  .main-navigation li {
@@ -47,11 +50,14 @@ li:last-child a {
 margin-right: 0;
 }
 .basket {
- width: 110px;
- position: absolute;
- left: 990px;
- top: 54px;
-
+ width: 70px;
+ float: right;
+ margin-top: 63px;
+ padding-left: 40px;
+ padding-right: 0;
+ /*margin-right: -55px;*/
+ /*margin-left: 60px;*/
+ background-color: blue;
 }
 .a-basket {
  text-transform: uppercase;
@@ -67,30 +73,16 @@ margin-right: 0;
  width: 380px;
  float: left;
 }
-.slider-content .slogan {
-  font-size: 36px;
-  line-height: 36px;
-}
-.slider-content p {
-  font-size: 16px;
-  line-height: 22px;
-  font-weight:550;
-  margin-bottom:  30px;
-}
-.slider-content .btn {
- /*width: 240px;*/
- padding:14px 70px;
- border-radius: 3px;
- background-color: #fb565a;
- font-size: 12px;
- color: #ffffff;
- line-height: 18px;
- text-transform: uppercase;
- text-decoration: none;
-
-}
 .slider-images {
  width: 390px;
  float: right;
+}
 
+.service-content {
+  width: 240px;
+  float: left;
+  margin-right: 80px;
+}
+.service-content:last-child {
+  margin-right: 0;
 }
