@@ -8,13 +8,14 @@ body {
  clear: both;
  }
 .main-header{
+ min-height:440px;
  background-color:#eeeeee;
  }
 .container {
  width:880px;
  margin: 0 auto;
  padding: 0 10px;
- background-color: rgba(255, 0, 0, 0.2);
+ /*background-color: rgba(255, 0, 0, 0.2);*/
  }
  .logo {
   float: left;
@@ -22,19 +23,20 @@ body {
   height: 56px;
   margin-top: 28px;
   margin-bottom: 77px;
-  /*margin-right: 160px;*/
+
  }
  .main-navigation {
-  width: 450px;
+  width: 480px;
   float: left;
   margin-top: 40px;
-  margin-right: 60px;
-  background-color: yellow;
+  margin-left: 160px;
+
 
  }
  .main-navigation li {
    display: inline-block;
    vertical-align: top;
+
  }
  .main-navigation li a {
   margin-right: 45px;
@@ -50,20 +52,19 @@ li:last-child a {
 margin-right: 0;
 }
 .basket {
- width: 70px;
+ width: 65px;
  float: right;
  margin-top: 63px;
- padding-left: 40px;
+ padding-left: 35px;
  padding-right: 0;
- /*margin-right: -55px;*/
- /*margin-left: 60px;*/
- background-color: blue;
+
 }
 .a-basket {
  text-transform: uppercase;
  font-size: 14px;
  color: #000000;
  text-decoration: none;
+
 }
 .slider {
  width:880px;
@@ -73,6 +74,26 @@ margin-right: 0;
  width: 380px;
  float: left;
 }
+.slogan {
+font-size: 36px;
+line-height: 36px;
+}
+.slider-content p {
+margin-bottom: 30px;
+line-height: 22px;
+font-size: 16px;
+}
+a.btn {
+  line-height: 18px;
+  padding: 15px 70px;
+  border-radius: 3px;
+  background-color: #fb565a;
+  font-size: 12px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  }
+
 .slider-images {
  width: 390px;
  float: right;
@@ -82,7 +103,43 @@ margin-right: 0;
   width: 240px;
   float: left;
   margin-right: 80px;
+  margin-top: 80px;
+
 }
 .service-content:last-child {
   margin-right: 0;
+}
+.service-content h2 {
+ font-family: Roboto Medium;
+ font-size: 18px;
+ line-height: 30px;
+ font-weight: 600;
+ text-transform: uppercase;
+ margin-top: 30px;
+}
+.service-content p {
+  font-family: Roboto Medium;
+  font-size: 15px;
+  line-height: 22px;
+  font-weight: 500;
+  margin-top: 28px;
+}
+.btn-order {
+  display: block;
+  margin-top: 30px;
+  padding: 15px 37px;
+  line-height: 18px;
+  font-size: 12px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;}
+.btn-order.red {
+ background-color:#fb565a;
+}
+.btn-order.green {
+ background-color: #00ca74;
+}
+.btn-order.yellow {
+ background-color: #efc84a;
 }
