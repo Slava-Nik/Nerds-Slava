@@ -4,8 +4,9 @@
 <head>
   <meta charset="utf-8">
   <title>Наш магазин</title>
-  <link href="css/shop.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/shop.css" rel="stylesheet">
 </head>
 
 <body>
@@ -35,7 +36,7 @@
    <div class="main-left">
     <section class="selection">
       <form action="#" method="post">
-        <fieldset>
+        <fieldset class="price">
           <legend>Стоимость:</legend>
           <div class="range-block"></div>
           <h3>От</h3>
@@ -43,7 +44,7 @@
           <h3>До</h3>
           <input type="text" value="15000">
         </fieldset>
-        <fieldset>
+        <fieldset class="grid">
           <legend>Сетка:</legend>
           <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
           <label for="adaptive">Адаптивная</label>
@@ -52,7 +53,7 @@
           <input type="radio" name="grid" value="flexible" id="flexible">
           <label for="flexible">Резиновая</label>
         </fieldset>
-        <fieldset>
+        <fieldset class="special">
           <legend>Особенности:</legend>
           <input type="checkbox" name="slider" id="slider" checked>
           <label for="slider">Слайдер</label>
@@ -69,16 +70,17 @@
       </form>
     </section>
   </div>
-    <div class="inline-block">
-      <form class="sort" action="#" method="post">
-        <h3>Сортировать:</h3>
-        <label for="price">По цене</label>
-        <input type="checkbox" name="price" id="price" checked>
-        <label for="type">По имени</label>
-        <input type="checkbox" name="type" id="type" checked>
-        <label for="function">По функционалу</label>
-        <input type="checkbox" name="function" id="function" checked>
+  <div class="main-right">
+    <div class="sort clearfix">
+      <h3>Сортировать:</h3><form class="sort-on" action="#" method="post">
+       <label for="price">По цене</label>
+       <input type="checkbox" name="price" id="price" checked>
+       <label for="type">По имени</label>
+       <input type="checkbox" name="type" id="type" checked>
+       <label for="function">По функционалу</label>
+       <input type="checkbox" name="function" id="function" checked>
       </form>
+    </div>
       <section class="layouts">
         <div class="layouts-1"><img src="aviator.jpg" width="200" height="200" alt="Макет Aviator"></div>
         <div class="layouts-2"><img src="sunset.jpg" width="200" height="200" alt="Интернет-магазин Sunset"></div>
@@ -94,16 +96,19 @@
         <a href="#"></a>
       </div>
     </div>
+  </div>
     <div class="map">
-      <img scr="map.png" alt="тел. +7(861) 275-75-75">
+      <img scr="map.png" alt="">
     </div>
   </main>
   <footer class="main-footer">
+   <div class="container clearfix">
     <section class="social"></section>
     <div class="friends">
-      <h1>Давайте дружить, это выгодно!</h1>
+      <h1>Давайте дружить, это выгодно!</h1><br>
       <p>Скидка 10% для друзей из социальных сетей.</p>
     </div>
+   </div>
   </footer>
 </body>
 
