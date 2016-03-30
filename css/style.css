@@ -4,11 +4,12 @@ body {
  }
 .clearfix {
  content: "";
+ height:0;
  display: table;
  clear: both;
  }
 .main-header{
- min-height:440px;
+ height:440px;
  background-color:#eeeeee;
  }
 .container {
@@ -17,35 +18,39 @@ body {
  padding: 0 10px;
 
  }
- .logo {
-  float: left;
-  width: 140px;
-  height: 56px;
-  margin-top: 28px;
-  margin-bottom: 77px;
-
+.logo {
+ float: left;
+ margin-top: 28px;
+ margin-right: 180px;
  }
- .main-navigation {
-  width: 480px;
+
+.main-navigation {
+  width: 450px;
   float: left;
-  margin-top: 40px;
-  margin-left: 160px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 
 
- }
- .main-navigation li {
+}
+.main-navigation ul {
+ padding: 0;
+ margin: 0;
+ list-style: none;
+}
+
+.main-navigation ul li {
    display: inline-block;
    vertical-align: top;
 
  }
- .main-navigation li a {
+.main-navigation li a {
   margin-right: 45px;
   line-height: 30px;
   text-decoration: none;
   font-size: 14px;
   color: #000000;
   text-transform: uppercase;
-  font-weight: 500;
+  font-weight: 600;
 
 }
 li:last-child a {
@@ -54,9 +59,9 @@ margin-right: 0;
 .basket {
  width: 65px;
  float: right;
- margin-top: 63px;
+ margin-top: 65px;
  padding-left: 35px;
- padding-right: 0;
+ font-weight: 600;
 
 }
 .a-basket {
@@ -99,17 +104,19 @@ a.btn {
  float: right;
 }
 .service {
- width: 880px;}
-
+  margin-top: 80px;
+}
 .service-content {
   width: 240px;
   float: left;
   margin-right: 80px;
-  margin-top: 80px;
+  margin-bottom: 80px;
+
 
 }
 .service-content:last-child {
-  margin-right: 0;
+ margin-right: 0px;
+
 }
 .service-content h2 {
  font-family: Roboto Medium;
@@ -127,18 +134,19 @@ a.btn {
   margin-top: 28px;
 }
 .btn-order {
-  display: block;
-  width: 100px;
-  height: 26px;
-  padding-top: 14px;
-  padding-left: 40px;
-  margin-top: 30px;
-  line-height: 18px;
-  font-size: 12px;
-  border-radius: 3px;
-  color: #ffffff;
-  text-decoration: none;
-  text-transform: uppercase;}
+ display: block;
+ width: 100px;
+ height: 26px;
+ padding-top: 14px;
+ padding-left: 40px;
+ margin-top: 30px;
+ line-height: 18px;
+ font-size: 12px;
+ border-radius: 3px;
+ color: #ffffff;
+ text-decoration: none;
+ text-transform: uppercase;
+}
 .btn-order.red {
  background-color:#fb565a;
 }
@@ -149,8 +157,6 @@ a.btn {
  background-color: #efc84a;
 }
 .about-us {
- width: 880px;
- margin-top: 80px;
  padding-top: 60px;
  border-top: 2px solid #eeeeee;
 }
@@ -176,22 +182,35 @@ a.btn {
 }
 
 .about-us-right {
- width:260px;
+ width: 260px;
  float: right;
 }
+figure.logo-since {
+ margin: 0;
+ padding: 0;
+}
+.logo2 {
+ position: relative;
+ left: 20px;
+}
+
 .how-we-work {
  margin-top: 63px;
 }
+
 .how-we-work h2 {
  font-size: 16px;
  line-height: 22px;
  font-weight: 500;
  text-transform:uppercase;
 }
-.how-we-work p {
-  margin-left: 38px;
-  line-height: 31px;
+.our-work ul,
+.how-we-work ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
+
 
 .partners {
   height: 165px;
@@ -201,14 +220,6 @@ a.btn {
   border-top: 2px solid #eeeeee;
   border-bottom: 2px solid #eeeeee;
 }
-
-.map {
- width: 1200px;
- height: 420px;
- background: blue url("img/forte.jpg");
- margin-left: -160px;
-}
-
 
 .main-footer .social {
   width: 240px;
