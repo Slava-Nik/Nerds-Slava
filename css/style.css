@@ -2,7 +2,7 @@ body {
  font-family: Roboto Medium;
  font-size: 16px;
  }
-.clearfix {
+.clearfix::after {
  content: "";
  height:0;
  display: table;
@@ -18,16 +18,18 @@ body {
  padding: 0 10px;
 
  }
+ .header-top {
+  padding-top:28px;
+  }
 .logo {
  float: left;
- margin-top: 28px;
  margin-right: 180px;
  }
 
 .main-navigation {
   width: 450px;
   float: left;
-  margin-top: 60px;
+  margin-top: 28px;
   margin-bottom: 60px;
 
 
@@ -59,7 +61,7 @@ margin-right: 0;
 .basket {
  width: 65px;
  float: right;
- margin-top: 65px;
+ margin-top: 33px;
  padding-left: 35px;
  font-weight: 600;
 
@@ -73,7 +75,6 @@ margin-right: 0;
 }
 .slider {
  width:880px;
- margin-top: 53px;
 }
 .slider-content {
  width: 380px;
