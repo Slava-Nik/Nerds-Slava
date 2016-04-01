@@ -1,5 +1,5 @@
 body {
- font-family: Roboto;
+ font-family: Roboto,Arial,sans-serif;
  font-size: 16px;
  }
 .clearfix::after {
@@ -224,17 +224,101 @@ figure.logo-since {
 }
 
 .main-footer .social {
-  width: 240px;
+  width: 300px;
   height: 215px;
   float: left;
-  background-color: yellow;
+
 }
 .main-footer .friends {
-  width: 560px;
+  width: 500px;
   float: right;
   margin-left: 80px;
   margin-top: 80px;
 }
-  .friends h1 {
+.friends h1 {
    font-size: 36px;
    line-height: 36px;}
+
+     /*Page2-Catalog*/
+
+
+.shop-header{
+  height:330px;
+  background-color:#eeeeee;
+  }
+
+.shop-header-top {
+  padding-top: 28px;
+  margin-bottom: 75px;
+  }
+
+
+.welcome {
+  width: 500px;
+  margin-left: 108px;
+  font-weight: 40px;
+  }
+.main-left {
+  width: 240px;
+  float: left;
+  margin-top: 81px;
+  margin-right:80px;
+}
+fieldset.price {
+  height: 170px;
+  margin-bottom: 52px;
+}
+fieldset.grid {
+  height:143px;
+  margin-bottom: 51px;
+  }
+fieldset.special {
+  height: 221px;
+  margin-bottom: 58px;
+  }
+.main-right {
+  width: 560px;
+  float: right;
+  margin-top: 81px;
+  }
+.sort {
+  margin-bottom: 25px;
+  font-size:0;
+  }
+.sort h3 {
+  display: inline-block;
+  vertical-align: top;
+  padding:0;
+  margin: 0;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  }
+.sort-list {
+  display: inline-block;
+  vertical-align: top;
+  margin:0;
+  margin-left: 41px;
+  padding: 0;
+  list-style: none;
+  }
+.sort-list li {
+  display: inline-block;
+  vertical-align:top;
+  margin-left: 41px;
+  font-size: 12px;
+  line-height: 18px;
+  text-transform: uppercase;
+  }
+.sort-list li:first-child {margin:0;}
+  section.layouts {
+  height: 972px;
+  }
+.layouts div {
+  display: inline-block;
+  margin-right: 80px;
+  margin-bottom: 80px;
+  }
+.layouts div:nth-child(2n) {
+  margin-right: 0;
+  }

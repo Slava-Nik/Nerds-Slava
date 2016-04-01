@@ -6,16 +6,18 @@
   <title>Наш магазин</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
-  <link href="css/shop.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="main-header">
     <div class="container">
      <div class="header-top clearfix">
+      <a href="../Nerds-Slava/index.html">
        <div class="logo">
          <img src="img/Nerds1.png" width="140" height="56" alt="Дизайн-студия Nerds">
        </div>
+      </a>
       <nav class="main-navigation">
        <ul>
         <li><a href="#">Студия</a></li>
@@ -71,15 +73,13 @@
     </section>
   </div>
   <div class="main-right">
-    <div class="sort clearfix">
-      <h3>Сортировать:</h3><form class="sort-on" action="#" method="post">
-       <label for="price">По цене</label>
-       <input type="checkbox" name="price" id="price" checked>
-       <label for="type">По имени</label>
-       <input type="checkbox" name="type" id="type" checked>
-       <label for="function">По функционалу</label>
-       <input type="checkbox" name="function" id="function" checked>
-      </form>
+    <div class="sort">
+      <h3>Сортировать:</h3>
+      <ul class="sort-list">
+        <li>По цене</li>
+        <li>По типу</li>
+        <li>По функционалу</li>
+      </ul>
     </div>
       <section class="layouts">
         <div class="layouts-1"><img src="aviator.jpg" width="200" height="200" alt="Макет Aviator"></div>
@@ -89,7 +89,7 @@
         <div class="layouts-5"><img src="avenue.jpg" width="200" height="200" alt="Avenue"></div>
         <div class="layouts-6"><img src="dovetail.jpg" width="200" height="200" alt="Dovetail"></div>
       </section>
-      <div class="breadcrumbs">
+      <div class="pages-item">
         <a href="#"></a>
         <a href="#"></a>
         <a href="#"></a>
