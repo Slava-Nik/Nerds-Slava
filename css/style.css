@@ -1,5 +1,5 @@
 body {
- font-family: Roboto,Arial,sans-serif;
+ font-family: "Roboto", "Arial", sans-serif;
  font-size: 16px;
  }
 .clearfix::after {
@@ -109,42 +109,33 @@ a.btn {
   margin-top: 80px;
 }
 .service-content {
-  width: 240px;
-  float: left;
-  margin-right: 80px;
-  margin-bottom: 80px;
-
-
-}
+ width: 240px;
+ float: left;
+ margin-right: 80px;
+ margin-bottom: 80px;
+ }
 .service-content:last-child {
  margin-right: 0px;
-
-}
+ }
 .service-content h2 {
- font-family: Roboto Medium;
  font-size: 18px;
  line-height: 30px;
- font-weight: 600;
+ font-weight: 500;
  text-transform: uppercase;
- margin-top: 30px;
-}
+ }
 .service-content p {
-  font-family: Roboto Medium;
-  font-size: 15px;
-  line-height: 22px;
-  font-weight: 500;
-  margin-top: 28px;
-}
+ margin-top: 5px;
+ margin-bottom:0;
+ font-size: 15px;
+ line-height: 22px;
+ }
 .btn-order {
  display: block;
- width: 100px;
- height: 26px;
- padding-top: 14px;
- padding-left: 40px;
- margin-top: 30px;
- line-height: 18px;
- font-size: 12px;
+ width: 60px;
  border-radius: 3px;
+ margin-top: 25px;
+ padding: 13px 40px;
+ font-size: 12px;
  color: #ffffff;
  text-decoration: none;
  text-transform: uppercase;
@@ -159,70 +150,90 @@ a.btn {
  background-color: #efc84a;
 }
 .about-us {
- padding-top: 60px;
+ padding-top: 58px;
  border-top: 2px solid #eeeeee;
 }
 .about-us-left {
  width: 540px;
  float: left;
  margin-right: 80px;
-}
+ }
 .about-us-left p b {
-  font-size: 36px;
-  line-height: 36px;
+ line-height: 36px;
+ font-size: 36px;
+ margin: 0;
+}
+.about-us-left p:last-of-type {
+ width: 590px;
+ margin-top: 20px;
+ margin-bottom: 0;
+ line-height: 22px;
 }
 .our-work h2 {
-  margin-top: 50px;
-  font-size: 16px;
-  line-height: 22px;
-  font-weight:500;
-  text-transform: uppercase;
+ margin-top: 43px;
+ margin-bottom: 0;
+ font-size: 16px;
+ line-height: 22px;
+ font-weight: 400;
+ text-transform: uppercase;
 }
-.our-work p {
- margin-left: 38px;
- line-height: 31px;
+.our-work ul li {
+ margin-top: 25px;
+ padding-left: 37px;
 }
 
 .about-us-right {
  width: 260px;
  float: right;
-}
-figure.logo-since {
- margin: 0;
- padding: 0;
-}
+ }
+.about-us-right figure{
+ margin-top: 5px;
+ }
 .logo2 {
  position: relative;
- left: 20px;
-}
+ right: 20px;
 
+}
 .how-we-work {
  margin-top: 63px;
+ margin-left:20px;
 }
 
 .how-we-work h2 {
  font-size: 16px;
  line-height: 22px;
- font-weight: 500;
+ font-weight: 400;
  text-transform:uppercase;
 }
 .our-work ul,
 .how-we-work ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+ list-style: none;
+ margin: 0;
+ padding: 0;
 }
-
-
+.how-we-work ul li {
+  margin-top: 25px;
+  padding-left: 37px;
+}
 .partners {
-  height: 165px;
-  margin-top: 75px;
-  margin-bottom: 85px;
-  padding-top: 45px;
-  border-top: 2px solid #eeeeee;
-  border-bottom: 2px solid #eeeeee;
-}
+ margin-top: 75px;
+ padding-top: 46px;
+ padding-bottom: 38px;
+ border-top: 2px solid #eeeeee;
+ border-bottom: 2px solid #eeeeee;
 
+}
+.partners a {
+ display: inline-block;
+ vertical-align: middle;
+ }
+.partners a:first-child{
+ margin-left: 10px;
+ margin-right: 120px;
+}
+.partners a:nth-child(2){
+ margin-right: 120px;
+}
 .main-footer .social {
   width: 300px;
   height: 215px;
