@@ -70,7 +70,15 @@ margin-right: 0;
  position: relative;
  font-weight: 500;
 }
-.basket::after {
+
+.a-basket {
+ text-transform: uppercase;
+ font-size: 14px;
+ color: #000000;
+ text-decoration: none;
+}
+
+.a-basket::after {
  content:"";
  width: 15px;
  height: 15px;
@@ -81,19 +89,13 @@ margin-right: 0;
  margin-left: -44px;
  background: url("../img/sprite.png") no-repeat -5px -5px;
 }
-.a-basket {
- text-transform: uppercase;
- font-size: 14px;
- color: #000000;
- text-decoration: none;
-}
+
 .a-basket:hover {
  color: #fb565a;
 }
-.a-basket:hover + .basket::after {
+.a-basket:hover::after {
 background-position: -5px -30px;
 }
-
 
 .slider {
  width:880px;
@@ -279,6 +281,9 @@ a.btn {
 .partners a:nth-child(2){
  margin-right: 120px;
 }
+.main-footer {
+ margin-top: 200px;
+}
 .main-footer .social {
  float: left;
  }
@@ -340,83 +345,210 @@ a.btn {
      /*Page2-Catalog*/
 
 
-.shop-header{
-  height:330px;
-  background-color:#eeeeee;
-  }
+.catalog-header{
+ background-color:#eeeeee;
+ }
 
-.shop-header-top {
-  padding-top: 28px;
-  margin-bottom: 75px;
-  }
-
+.main-navigation .active {
+ border-bottom: 2px solid #fb565a;
+}
+a.active:hover, a.active:active {
+ color: #000000;
+}
 
 .welcome {
-  width: 500px;
-  margin-left: 108px;
-  font-weight: 40px;
-  }
+ width: 740px;
+ margin: 0 auto;
+ padding-bottom: 87px;
+ text-align: center;
+ font-size: 40px;
+ font-weight: 400;
+ text-transform: uppercase;
+}
+
 .main-left {
   width: 240px;
   float: left;
-  margin-top: 81px;
+  margin-top: 78px;
   margin-right:80px;
 }
+.main-left fieldset {
+ border: none;
+ margin: 0;
+ padding: 0;
+ }
+fieldset legend {
+ margin: 0;
+ padding: 0;
+ font-size: 18px;
+ text-transform: uppercase;
+}
+
 fieldset.price {
   height: 170px;
   margin-bottom: 52px;
 }
+.range-block {
+ height: 80px;
+ margin-top: 20px;
+ background-color:#f1f1f1;
+ border-radius: 5px;
+}
+.price-block {
+ margin-top: 15px;
+}
+.min-price,
+.max-price {
+ line-height: 22px;
+ text-transform: uppercase;
+}
+.min-price {
+ margin-right: 8px;
+}
+.price-block input {
+ width: 60px;
+ padding: 8px 9px;
+ border: none;
+ background-color: #f1f1f1;
+ border-radius: 5px;
+ text-align: center;
+ margin-left: 10px;
+ }
+
 fieldset.grid {
   height:143px;
   margin-bottom: 51px;
   }
+.grid legend,
+.special legend {
+ margin-bottom: 21px;
+}
+.grid input {
+ display: none;
+}
+.grid label {
+ display: block;
+ padding-left:40px;
+ margin-bottom: 21px;
+ position: relative;
+font-weight: 500;
+}
+
+.grid label::before {
+ content: "";
+ width: 20px;
+ height: 20px;
+ position: absolute;
+ top: 50%;
+ left: 0%;
+ margin-top: -12px;
+ border: 3px solid #c1c1c1;
+ border-radius: 50%;
+ }
+
 fieldset.special {
-  height: 221px;
-  margin-bottom: 58px;
-  }
+ height: 221px;
+ margin-bottom: 58px;
+}
+.special input {
+ display: none;
+}
+.special label {
+ display: block;
+ padding-left: 40px;
+ margin-bottom: 21px;
+ position: relative;
+ font-weight: 500;
+}
+.special label::before {
+ content:"";
+ width: 18px;
+ height: 18px;
+ position: absolute;
+ left: 0;
+ border: 3px solid #c1c1c1;
+ border-radius: 5px;
+}
+.main-left button {
+ width: 150px;
+ height: 40px;
+ text-align: center;
+ margin: 0;
+ border: none;
+ border-radius: 5px;
+ background-color: #f1f1f1;
+ font-size: 12px;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+
 .main-right {
-  width: 560px;
-  float: right;
-  margin-top: 81px;
-  }
+ width: 560px;
+ float: right;
+ margin-top: 78px;
+ }
 .sort {
-  margin-bottom: 25px;
-  font-size:0;
-  }
+ margin-bottom: 25px;
+ position: relative;
+ font-size:0;
+ }
 .sort h3 {
-  display: inline-block;
-  vertical-align: top;
-  padding:0;
-  margin: 0;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  }
+ display: inline-block;
+ vertical-align: top;
+ padding:0;
+ margin: 0;
+ font-size: 12px;
+ line-height: 18px;
+ text-transform: uppercase;
+ }
 .sort-list {
-  display: inline-block;
-  vertical-align: top;
-  margin:0;
-  margin-left: 41px;
-  padding: 0;
-  list-style: none;
-  }
+ display: inline-block;
+ vertical-align: top;
+ margin:0;
+ margin-left: 41px;
+ padding: 0;
+ list-style: none;
+ }
 .sort-list li {
-  display: inline-block;
-  vertical-align:top;
-  margin-left: 41px;
-  font-size: 12px;
-  line-height: 18px;
-  text-transform: uppercase;
-  }
-.sort-list li:first-child {margin:0;}
-  section.layouts {
-  height: 972px;
-  }
-.layouts div {
-  display: inline-block;
-  margin-right: 80px;
-  margin-bottom: 80px;
-  }
-.layouts div:nth-child(2n) {
+ display: inline-block;
+ vertical-align:top;
+ margin-left: 44px;
+ font-size: 12px;
+ line-height: 18px;
+ text-transform: uppercase;
+ cursor: pointer;
+ }
+.sort-list li:first-child {
+ margin:0;
+ }
+.sort-list li:not(:last-child) {
+ color: #b2b2b2;
+ border-bottom: 1px dotted #00ca74;
+ }
+.sort-list li:hover {
+ color: #000000;
+ }
+.sort-list li:active {
+ border: none;
+}
+.sort::after {
+ content:"";
+ position: absolute;
+ right: 0;
+ /*Доделать псевдоэлемент-переключатель, ушёл в бассейн*/
+}
+.layouts {
+ font-size: 0;
+}
+.layouts article {
+ display: inline-block;
+ vertical-align: top;
+ margin-right: 80px;
+ margin-bottom: 80px;
+ }
+.layouts article:nth-child(2n) {
   margin-right: 0;
-  }
+ }
+.layouts article:nth-child(n+5){
+ margin-bottom: 0;
+}

@@ -3,17 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Наш магазин</title>
+  <title>Catalog</title>
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,500&subset=latin,cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="main-header">
+  <header class="catalog-header">
     <div class="container">
      <div class="header-top clearfix">
-      <a href="../Nerds-Slava/index.html">
+      <a href="index.html">
        <div class="logo">
          <img src="img/Nerds1.png" width="140" height="56" alt="Дизайн-студия Nerds">
        </div>
@@ -22,7 +22,7 @@
        <ul>
         <li><a href="#">Студия</a></li>
         <li><a href="#" title="Наши довольные клиенты">Клиенты</a></li>
-        <li><a href="#" title="Вы сейчас здесь">Магазин</a></li>
+        <li><a class="active" href="#" title="Вы сейчас здесь">Магазин</a></li>
         <li> <a href="#" title="Свяжитесь с нами">Контакты</a></li>
        </ul>
       </nav>
@@ -36,16 +36,21 @@
   </header>
   <main class="container">
    <div class="main-left">
-    <section class="selection">
-      <form action="#" method="post">
-        <fieldset class="price">
-          <legend>Стоимость:</legend>
-          <div class="range-block"></div>
-          <h3>От</h3>
-          <input type="text" value="0">
-          <h3>До</h3>
-          <input type="text" value="15000">
-        </fieldset>
+    <form action="#" method="post">
+      <fieldset class="price">
+        <legend>Стоимость:</legend>
+        <div class="range-filter">
+         <div class="range-block"></div>
+         <div class="price-block">
+          <label class="min-price">От
+           <input type="text" value="0">
+          </label>
+          <label class="max-price">До
+           <input type="text" value="15000">
+          </label>
+         </div>
+        </div>
+      </fieldset>
         <fieldset class="grid">
           <legend>Сетка:</legend>
           <input type="radio" name="grid" value="adaptive" id="adaptive" checked>
@@ -70,8 +75,7 @@
         </fieldset>
         <button type="submit">Показать</button>
       </form>
-    </section>
-  </div>
+    </div>
   <div class="main-right">
     <div class="sort">
       <h3>Сортировать:</h3>
@@ -82,18 +86,18 @@
       </ul>
     </div>
       <section class="layouts">
-        <div class="layouts-1"><img src="aviator.jpg" width="200" height="200" alt="Макет Aviator"></div>
-        <div class="layouts-2"><img src="sunset.jpg" width="200" height="200" alt="Интернет-магазин Sunset"></div>
-        <div class="layouts-3"><img src="forte.jpg" width="200" height="200" alt="Forte"></div>
-        <div class="layouts-4"><img src="thai.jpg" width="200" height="200" alt="Сайт тайской еды"></div>
-        <div class="layouts-5"><img src="avenue.jpg" width="200" height="200" alt="Avenue"></div>
-        <div class="layouts-6"><img src="dovetail.jpg" width="200" height="200" alt="Dovetail"></div>
+       <article class="layouts-1"><img src="img/aviator.jpg" width="240" height="240" alt="Макет Aviator"></article>
+       <article class="layouts-2"><img src="img/sunset.jpg" width="240" height="240" alt="Интернет-магазин Sunset"></article>
+       <article class="layouts-3"><img src="img/forte.jpg" width="240" height="240" alt="Forte"></article>
+       <article class="layouts-4"><img src="img/thai.jpg" width="240" height="240" alt="Сайт тайской еды"></article>
+       <article class="layouts-5"><img src="img/avenue.jpg" width="240" height="240" alt="Avenue"></article>
+       <article class="layouts-6"><img src="img/dovetail.jpg" width="240" height="240" alt="Dovetail"></article>
       </section>
       <div class="pages-item">
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
-        <a href="#"></a>
+       <a href="#"></a>
+       <a href="#"></a>
+       <a href="#"></a>
+       <a href="#"></a>
       </div>
     </div>
   </div>
@@ -103,7 +107,11 @@
   </main>
   <footer class="main-footer">
    <div class="container clearfix">
-    <section class="social"></section>
+    <div class="social">
+     <a class="vk" href="#">vk</a>
+     <a class="facebook" href="#">Facebook</a>
+     <a class="instagramm" href="#">Instagramm</a>
+    </div>
     <div class="friends">
       <h1>Давайте дружить, это выгодно!</h1><br>
       <p>Скидка 10% для друзей из социальных сетей.</p>
