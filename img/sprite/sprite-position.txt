@@ -1,0 +1,101 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite--icon-basket {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -5px;
+}
+
+.sprite--icon-basket-red {
+    width: 15px;
+    height: 15px;
+    background-position: -5px -30px;
+}
+
+.sprite--icon-check-on-disabled {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -55px;
+}
+
+.sprite--icon-checkbox-off {
+    width: 23px;
+    height: 23px;
+    background-position: -5px -88px;
+}
+
+.sprite--icon-checkbox-on {
+    width: 27px;
+    height: 23px;
+    background-position: -5px -121px;
+}
+
+.sprite--icon-down-black {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -154px;
+}
+
+.sprite--icon-down-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -174px;
+}
+
+.sprite--icon-down-green {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -194px;
+}
+
+.sprite--icon-down-lightgray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -214px;
+}
+
+.sprite--icon-facebook {
+    width: 12px;
+    height: 22px;
+    background-position: -5px -234px;
+}
+
+.sprite--icon-instagramm {
+    width: 21px;
+    height: 21px;
+    background-position: -5px -266px;
+}
+
+.sprite--icon-up-black {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -297px;
+}
+
+.sprite--icon-up-gray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -317px;
+}
+
+.sprite--icon-up-green {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -337px;
+}
+
+.sprite--icon-up-lightgray {
+    width: 11px;
+    height: 10px;
+    background-position: -5px -357px;
+}
+
+.sprite--icon-vk {
+    width: 26px;
+    height: 15px;
+    background-position: -5px -377px;
+}
