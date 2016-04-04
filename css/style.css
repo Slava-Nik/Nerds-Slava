@@ -192,12 +192,11 @@ a.btn {
 .yellow:active {
  background-color: #c09b24;
  box-shadow: 0 3px 0 0 #a3841f inset;
-
-}
+ }
 .about-us {
  padding-top: 58px;
  border-top: 2px solid #eeeeee;
-}
+ }
 .about-us-left {
  width: 540px;
  float: left;
@@ -213,7 +212,7 @@ a.btn {
  margin-top: 20px;
  margin-bottom: 0;
  line-height: 22px;
-}
+ }
 .our-work h2 {
  margin-top: 43px;
  margin-bottom: 0;
@@ -221,11 +220,11 @@ a.btn {
  line-height: 22px;
  font-weight: 400;
  text-transform: uppercase;
-}
+ }
 .our-work ul li {
  margin-top: 25px;
  padding-left: 37px;
-}
+ }
 
 .about-us-right {
  width: 260px;
@@ -282,7 +281,7 @@ a.btn {
  margin-right: 120px;
 }
 .main-footer {
- margin-top: 200px;
+ margin-top: 400px;
 }
 .main-footer .social {
  float: left;
@@ -454,8 +453,8 @@ fieldset.grid {
  position: absolute;
  top: 0%;
  left: 0%;
- margin-left: 9px;
- margin-top: 7px;
+ margin-left: 8.5px;
+ margin-top: 6px;
  background-color: #c1c1c1;
  border-radius: 50%;
  display: none;
@@ -552,6 +551,7 @@ fieldset.special {
  margin:0;
  margin-left: 41px;
  padding: 0;
+ font-size: 0;
  list-style: none;
  }
 .sort-list li {
@@ -566,22 +566,49 @@ fieldset.special {
 .sort-list li:first-child {
  margin:0;
  }
-.sort-list li:not(:last-child) {
+.sort-list li:nth-child(-n+2) {
  color: #b2b2b2;
  border-bottom: 1px dotted #00ca74;
  }
-.sort-list li:hover {
+.sort-list li:not(.arrows):hover {
  color: #000000;
+ border-bottom: 1px solid #00ca74;
  }
-.sort-list li:active {
+.sort .sort-list li:active {
  border: none;
-}
-.sort::after {
- content:"";
+ }
+.sort-list .arrows {
+ width:29px;
+ height:12px;
+ margin-left: 100px;
+ margin-top: 3px;
+ position: relative;
+ border: none;
+ }
+.arrow {
+ width: 11px;
+ height: 10px;
  position: absolute;
+ background-image: url("../img/sprite.png");
+ }
+.arrow-down {
+ left: 20%;
+ background-position: -5px -194px;
+ }
+.arrow-down:hover {
+ background-position: -5px -174px;
+ }
+.arrow-down:active {
+ background-position: -5px -154px;
+ }
+.arrow-up {
+ top: 0;
  right: 0;
- /*Доделать псевдоэлемент-переключатель, ушёл в бассейн*/
-}
+ background-position: -5px -317px;
+ }
+.arrow-up:active {
+ background-position: -5px -297px;
+ }
 .layouts {
  font-size: 0;
 }
@@ -596,4 +623,36 @@ fieldset.special {
  }
 .layouts article:nth-child(n+5){
  margin-bottom: 0;
+ }
+.pagination {
+ margin-top: 80px;
+ font-size: 0;
+ }
+.pagination a {
+ margin-right: 10px;
+ padding: 10.5px 15px;
+ display: inline-block;
+ border-radius: 3px;
+ font-size: 12px;
+ text-transform: uppercase;
+ text-decoration: none;
+ color: #000000;
+ font-weight: 600;
+}
+.pagination .active {
+ border: 2px solid #f1f1f1;
+ padding: 8.5px 13px;
+ }
+.pagination a:not(.active) {
+ background-color: #f1f1f1;
+ }
+.pagination a:not(.active):hover {
+ background-color: #e5e5e5;
+ }
+ .pagination a:not(.active):active {
+ background-color: #d5d5d5;
+ box-shadow: 0 3px 0 0 #b5b5b5 inset;
+ }
+.pagination .next {
+ padding: 10.5px 31px;
 }
