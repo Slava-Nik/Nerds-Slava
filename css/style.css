@@ -1,4 +1,5 @@
 body {
+ min-width: 900px;
  font-family: "Roboto", "Trebuchet MS", sans-serif;
  font-size: 16px;
  }
@@ -231,6 +232,16 @@ a.btn {
 .our-work ul li {
  margin-top: 25px;
  padding-left: 37px;
+ position: relative;
+ }
+.our-work-list li::before {
+ content: "";
+ width: 25px;
+ height: 2px;
+ position: absolute;
+ top: 9px;
+ left: 1px;
+ border-bottom: 2px solid #fb565a;
  }
 
 .about-us-right {
@@ -255,16 +266,29 @@ a.btn {
  font-weight: 400;
  text-transform:uppercase;
 }
-.our-work ul,
-.how-we-work ul {
+.our-work-list,
+.how-we-work-list {
  list-style: none;
  margin: 0;
  padding: 0;
 }
-.how-we-work ul li {
-  margin-top: 25px;
-  padding-left: 37px;
+.how-we-work-list li {
+ margin-top: 25px;
+ padding-left: 37px;
+ position: relative;
 }
+.how-we-work-list li:before {
+ content: "";
+ width: 25px;
+ height: 2px;
+ position: absolute;
+ top: 9px;
+ left: 1px;
+ border-bottom: 2px solid #fb565a;
+
+
+}
+
 .partners {
  margin-top: 75px;
  padding-top: 46px;
@@ -292,13 +316,13 @@ a.btn {
 }
 .main-footer .social {
  float: left;
+ font-size: 0;
  }
 .social a {
  display: inline-block;
  vertical-align: top;
  width: 62px;
  height: 62px;
- margin-top: 80px;
  margin-right: 27px;
  position: relative;
  border-radius: 50%;
@@ -342,13 +366,17 @@ a.btn {
  }
 .main-footer .friends {
  float: left;
- margin-left: 72px;
- margin-top: 80px;
+ margin-left: 79px;
 }
-.friends h1 {
+.friends h2 {
  font-size: 36px;
  line-height: 36px;
  margin: 0;
+ }
+.friends p {
+ margin-top: 10px;
+ font-size: 16px;
+ line-height: 22px;
  }
 
      /*Page2-Catalog*/
@@ -396,17 +424,45 @@ fieldset legend {
 }
 
 fieldset.price {
-  height: 170px;
-  margin-bottom: 52px;
-}
+ height: 170px;
+ margin-bottom: 52px;
+ }
 .range-block {
- height: 80px;
+ height: 41px;
  margin-top: 20px;
+ padding: 0 30px;
+ padding-top: 39px;
+ position: relative;
  background-color:#f1f1f1;
  border-radius: 5px;
-}
+ }
+.range-block .scale {
+ height: 2px;
+ background-color: #d7dcde;
+ }
+.green-bar {
+ height: 2px;
+ background-color: #00ca74;
+ }
+.range-block .toggle {
+ width: 4px;
+ height: 4px;
+ position: absolute;
+ top: 30px;
+ left: 30px;
+ border-radius: 50%;
+ background-color: #ababab;
+ border: 8px solid #ffffff;
+ box-shadow: 0 2px 1px 0 #cfcfcf;
+ cursor: pointer;
+ }
+.range-block .max-toggle {
+ left: 145px;
+ }
+
 .price-block {
  margin-top: 15px;
+ white-space: nowrap;
 }
 .min-price,
 .max-price {
@@ -414,7 +470,7 @@ fieldset.price {
  text-transform: uppercase;
 }
 .min-price {
- margin-right: 8px;
+ margin-right: 14px;
 }
 .price-block input {
  width: 60px;
@@ -444,6 +500,7 @@ fieldset.grid {
  position: relative;
  font-weight: 600;
  opacity: 0.8;
+ cursor: pointer;
  }
 
 .grid label::before {
@@ -489,6 +546,7 @@ fieldset.special {
  position: relative;
  font-weight: 600;
  opacity: 0.8;
+ cursor: pointer;
 }
 
 .grid label:hover,
