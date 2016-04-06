@@ -395,7 +395,7 @@ a.btn {
  margin-right: 120px;
  }
 .main-footer {
- margin-top: 400px;
+ margin-bottom: 30px;
  }
 .main-footer .social {
  float: left;
@@ -881,3 +881,52 @@ a.btn-price {
 .pagination .next {
  padding: 10.5px 31px;
  }
+
+.map {
+ height: 416px;
+ background-color: #eeeeee;
+ margin: 85px auto;
+ background-image: url("../img/map.jpg");
+ background-repeat: no-repeat;
+ background-position: 50% 0;
+
+}
+.map-marker {
+ width: 231px;
+ height: 190px;
+ margin: 0 auto;
+ position: relative;
+ left: 357px;
+ top: 110px;
+ background-image: url("../img/marker.png");
+ background-repeat: no-repeat;
+ }
+.form-feedback {
+ width: 225px;
+ min-height: 210px;
+ padding-top: 30px;
+ padding-left: 25px;
+ background-color: #ffffff;
+ margin: 0 auto;
+ position: relative;
+ bottom: 104px;
+ right: 314px;
+}
+.feedback-title {
+ margin: 0;
+ font-size: 16px;
+ font-weight: 500;
+ text-transform: uppercase;
+}
+.feedback-address {
+ max-width: 211px;
+ font-size: 16px;
+ line-height: 20px;
+ margin-bottom: 22px;
+}
+.feedback-phone {
+ margin-bottom: 30px;
+ }
+.btn-feedback {
+ width: 207px;
+}
