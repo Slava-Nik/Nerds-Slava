@@ -764,6 +764,9 @@ fieldset.special {
 .layouts {
  font-size: 0;
 }
+.layout {
+ position: relative;
+}
 .layouts article {
  display: inline-block;
  vertical-align: top;
@@ -776,6 +779,76 @@ fieldset.special {
 .layouts article:nth-child(n+5){
  margin-bottom: 0;
  }
+.layout .browser {
+ width: 240px;
+ margin: 0;
+ padding: 10px 0;
+ border-radius: 3px;
+ list-style: none;
+ font-size: 0;
+ background-color: #f1f1f1;
+ }
+
+.browser li {
+ display: inline-block;
+ width: 10px;
+ height: 10px;
+ margin-right: 8px;
+ background-color: #ffffff;
+ border-radius: 50%;
+}
+.browser li:first-child {
+ margin-left: 13px;
+ }
+
+.layout .layout-hidden {
+ display: none;
+ width: 200px;
+ height: 132px;
+ padding: 34px 0;
+ margin-top: -85px;
+ margin-left: -100px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ text-align: center;
+ background-color: #ffffff;
+ }
+.layout-hidden .hidden-title {
+ margin: 0;
+ margin-bottom: 17.5px;
+ font-size: 18px;
+ font-weight: 600;
+ line-height: 1.3;
+ text-transform: uppercase;
+ }
+.layout-hidden .hidden-text {
+ font-size: 14px;
+ line-height: 18px;
+ max-width: 160px;
+ margin: 0 23px;
+ margin-right: 0;
+ margin-bottom: 28px;
+}
+a.btn-price {
+ width: 140px;
+ margin-left: 30px;
+ font-size: 18px;
+ }
+.layout:nth-of-type(4) .hidden-title {
+ margin-bottom: 10px;
+ }
+.layout:nth-of-type(4) .hidden-text {
+ margin-bottom: 12px;
+ }
+
+.layout:hover .browser {
+ background-color: #797979;
+ }
+.layout:hover .layout-hidden {
+ display: block;
+ }
+
 .pagination {
  margin-top: 80px;
  font-size: 0;
@@ -807,4 +880,4 @@ fieldset.special {
  }
 .pagination .next {
  padding: 10.5px 31px;
-}
+ }
