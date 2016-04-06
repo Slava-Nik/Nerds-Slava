@@ -1,4 +1,4 @@
-body {
+ body {
  min-width: 900px;
  font-family: "Roboto", "Trebuchet MS", sans-serif;
  font-size: 16px;
@@ -24,13 +24,13 @@ body {
 .logo {
  float: left;
  margin-right: 180px;
+ margin-bottom: 42px;
  }
 
 .main-navigation {
  width: 430px;
  float: left;
  margin-top: 28px;
- margin-bottom: 60px;
  }
 
 .main-navigation ul {
@@ -107,35 +107,125 @@ background-position: -5px -30px;
 
 .slider {
  width:880px;
+ height: 310px;
+ position: relative;
+ overflow: hidden;
 }
-.slider-content {
+.slider-controls {
+ width: 101px;
+ position: absolute;
+ bottom: 95px;
+ margin-left: 380px;
+ text-align: center;
+ z-index: 500;
+ }
+.slider-controls input {
+ display: none;
+ }
+.slider-controls label {
+ display: inline-block;
+ width: 4px;
+ height: 4px;
+ margin: 0 3px;
+ background-color: #ffffff;
+ border: 3px solid #ffffff;
+ vertical-align: bottom;
+ border-radius: 50%;
+ cursor: pointer;
+ }
+
+#btn-1:checked+label[for="btn-1"],
+#btn-2:checked+label[for="btn-2"],
+#btn-3:checked+label[for="btn-3"] {
+ background-color: #c1c1c1;
+ }
+
+.slides {
+ position:absolute;
+ width: 100%;
+ height: 100%;
+ background-color: rgba(0,255,0,0.2);
+ }
+
+.slide-description {
  width: 380px;
- float: left;
-}
-.slogan {
- font-size: 36px;
+ padding: 32px 0;
+ }
+.slide-slogan {
+ max-width: 250px;
  line-height: 36px;
+ font-size: 36px;
+ font-weight: 600;
 }
-.slider-content p {
+.slide-text {
+ max-width: 380px;
+ margin-top: 20px;
  margin-bottom: 30px;
  line-height: 22px;
  font-size: 16px;
-}
+ }
 a.btn {
+ display: block;
+ max-width: 240px;
+ padding-top: 11px;
+ padding-bottom: 11px;
  line-height: 18px;
- padding: 15px 70px;
  border-radius: 3px;
  background-color: #fb565a;
+ text-align: center;
  font-size: 12px;
  color: #ffffff;
  text-decoration: none;
  text-transform: uppercase;
  }
-
-.slider-images {
- width: 390px;
- float: right;
+.slide-1 {
+ display: none;
+ background-image: url("../img/devices.png");
+ background-repeat: no-repeat;
+ background-position: 100% 10px;
 }
+
+.slide-2 .slide-description,
+.slide-3 .slide-description {
+ width: 470px;
+}
+.slide-2 .slide-slogan {
+ max-width: 470px;
+}
+.slide-2 .slide-text {
+ max-width: 460px;
+}
+.slide-2 {
+ display: none;
+ background-image: url("../img/calculator.png");
+ background-repeat: no-repeat;
+ background-position: 640px 14px;
+ }
+
+.slide-3 .slide-slogan {
+ max-width: 320px;
+ }
+.slide-3 .slide-text {
+ max-width: 470px;
+}
+.slide-3 {
+ display: none;
+ height: 310px;
+ background-image: url("../img/monkey.png");
+ background-repeat: no-repeat;
+ background-position: 100% 0;
+ }
+#btn-1:checked ~ .slides .slide-1 {
+ display: block;
+}
+
+
+
+
+
+
+
+
 .service {
   margin-top: 80px;
 }
