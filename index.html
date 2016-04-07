@@ -143,9 +143,20 @@
      191186, Санкт-Петербург,
      ул. Б. Конюшенная, д. 19/8</p>
     <p class="feedback-phone">тел. +7 (812) 275-75-75</p>
-    <a class="btn red btn-feedback">Напишите нам</a>
-   </div>
-
+    <label class="btn red btn-feedback" for="form-on">Напишите нам</label>
+    <input type="radio" id="form-on" name="form-status">
+    <input type="radio" id="form-off" name="form-status">
+    <form class="feedback-write" action="#" method="post">
+     <label class="btn-close red" for="form-off"></label>
+     <label for="username">Ваше имя:</label>
+     <label for="mail">Ваш e-mail:</label>
+     <input type="text" name="username" id="username" placeholder="Представьтесь, пожалуйста">
+     <input type="email" name="mail-adress" id="mail" placeholder="Для отправки ответа">
+     <label for="letter">Текст письма:</label>
+     <textarea name="text-letter" id="letter" placeholder="В свободной форме"></textarea>
+     <button class="btn red btn-send">Отправить</button>
+    </form>
+  </div>
   </div>
   <footer class="main-footer">
     <div class="container clearfix">

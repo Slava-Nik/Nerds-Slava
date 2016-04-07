@@ -163,7 +163,7 @@ background-position: -5px -30px;
  line-height: 22px;
  font-size: 16px;
  }
-a.btn {
+.btn {
  display: block;
  max-width: 240px;
  padding-top: 11px;
@@ -174,6 +174,7 @@ a.btn {
  text-align: center;
  font-size: 12px;
  color: #ffffff;
+ outline: none;
  text-decoration: none;
  text-transform: uppercase;
  }
@@ -906,6 +907,7 @@ a.btn-price {
  min-height: 210px;
  padding-top: 30px;
  padding-left: 25px;
+ position: relative;
  background-color: #ffffff;
  margin: 0 auto;
  position: relative;
@@ -930,3 +932,117 @@ a.btn-price {
 .btn-feedback {
  width: 207px;
 }
+.feedback-write {
+ display: none;
+ width: 471px;
+ height: 308px;
+ padding: 55px 80px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -240px;
+ margin-left: -7px;
+ box-shadow: 0 20px 40px 0px #585855;
+ background-color: #ffffff;
+ }
+
+.feedback-write label {
+ font-size: 16px;
+ line-height: 18px;
+ font-weight: 500;
+ }
+label[for="username"] {
+ margin-right: 162px;
+ }
+
+.feedback-write input {
+ width: 188px;
+ padding: 7px 14px;
+ margin-top: 11px;
+ margin-right: 20px;
+ margin-bottom: 22px;
+ border: 2px solid #d7dcde;
+ line-height: 18px;
+ border-radius: 3px;
+ color: #000000!important;
+ font-size: 12px;
+ font-weight: 500;
+ }
+
+input[name="mail-adress"] {
+ margin-right: 0;
+ }
+textarea[name="text-letter"] {
+ width: 432px;
+ margin-top: 10px;
+ margin-bottom: 48px;
+ padding: 7px 14px;
+ padding-bottom: 60px;
+ border: 2px solid #d7dcde;
+ border-radius: 3px;
+ font-size: 12px;
+ font-weight: 500;
+ line-height: 18px;
+ text-transform: uppercase;
+ resize: none;
+ }
+textarea:-moz-placeholder,
+input:-moz-placeholder {
+text-transform: uppercase;
+ }
+textarea::-webkit-input-placeholder,
+input::-webkit-input-placeholder {
+ text-transform: uppercase;
+ }
+
+button.btn-send {
+ padding: 13px 195px;
+ max-width: 465px;
+ border: none;
+ }
+.btn-close {
+ width: 41px;
+ height: 41px;
+ position: absolute;
+ right: 0;
+ top: 0;
+ margin-top: 6px;
+ margin-right: 6px;
+ border-radius: 50%;
+ background-color: #fb565a;
+ }
+.btn-close::before {
+ content: "";
+ width: 27px;
+ height: 5.5px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -2.75px;
+ margin-left: -13.5px;
+ background-color: #ffffff;
+ transform: rotate(45deg);
+ }
+
+.btn-close::after {
+ content: "";
+ width: 27px;
+ height: 5.5px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ margin-top: -2.75px;
+ margin-left: -13.5px;
+ background-color: #ffffff;
+ transform: rotate(-45deg);
+ }
+
+input[name="form-status"] {
+ display: none;
+ }
+ #form-on:checked ~ .feedback-write {
+ display: block;
+ }
+#form-off:checked ~.feedback-write {
+ display: none;
+ }
