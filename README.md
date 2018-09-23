@@ -1,1 +1,1 @@
-# Nerds-Slava. My first project is Nerds!
+# Nerds-Slava. The one of my first projects
